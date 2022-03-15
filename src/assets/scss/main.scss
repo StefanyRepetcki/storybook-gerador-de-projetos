@@ -1,0 +1,256 @@
+// variables
+$pink: #6d327c;
+$white: #ffffff;
+$blue: #00BF98;
+$background-pink: $pink;
+$background-gradient: -webkit-linear-gradient(to right top, #6d327c, #485DA6, #00a1ba, #00BF98, #36C486) !important;/* Chrome 10-25, Safari 5.1-6 */
+$background-gradient-otherbrowser: linear-gradient(to right top, #6d327c, #485DA6, #00a1ba, #00BF98, #36C486);
+
+.token.string {
+    color: $white !important;
+}
+.button {
+    filter: invert(1);
+    background: white !important;
+    color: black !important;
+}
+
+.sbdocs{
+    max-width: 100% !important;
+    padding: 2% !important;
+    justify-content: left;
+}
+.font-weight-bold {
+    font-weight: 700;
+}
+.btn-custom-gradient {
+    background: linear-gradient(to bottom, #888dff, #84d6f9) !important;
+    border-radius: 5px !important;
+    display: inline-block;
+    color: white !important;
+    text-transform: uppercase !important;
+    border-bottom: 5px solid $blue !important;
+    font-size: 1.5rem;
+    margin: 2% 0 !important;
+    font-family: "Quicksand",sans-serif;
+    &:hover, &:active {
+        //background: #ff4a70 !important;
+        border-bottom: none !important;
+        transition: none !important;
+    }
+}
+
+.btn-custom {
+    background-color: #FF305C !important;
+    border-radius: 5px !important;
+    display: inline-block;
+    color: white !important;
+    text-transform: uppercase !important;
+    border-bottom: 5px solid #b00025 !important;
+    font-size: 1.5rem;
+    margin: 2% 0 !important;
+    font-family: "Quicksand",sans-serif;
+    &:hover, &:active {
+        //background: #ff4a70 !important;
+        border-bottom: none !important;
+        transition: none !important;
+    }
+}
+
+.btn-custom-pink {
+    background-color: $pink !important;
+    border-radius: 5px !important;
+    display: inline-block;
+    color: white !important;
+    text-transform: uppercase !important;
+    border-bottom: 5px solid $blue !important;
+    font-size: 1.5rem;
+    margin: 2% 0 !important;
+    font-family: "Quicksand",sans-serif;
+    &:hover, &:active {
+        //background: #ff4a70 !important;
+        border-bottom: none !important;
+        transition: none !important;
+    }
+}
+
+.btn-custom:hover:active {
+    border-bottom: none !important;
+    transition: none !important;
+}
+
+.btn-custom:hover {
+    background: #ff4a70 !important;
+    color: white !important;
+}
+
+// cards
+.row-card {
+    height: 500px !important;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.card-custom {
+    overflow: hidden;
+    width: 440px !important;
+    height: 440px !important;
+    position: absolute;
+    float: left;
+    padding: 0%;
+    img {
+        width: 440px !important;
+        height: 440px !important;
+        object-fit: cover;
+        //zoomer
+        animation-name: zoomer;
+        animation-duration: 100s;
+        animation-iteration-count: infinite;
+    }
+    .card-body {
+        width: 460px !important;
+        height: 170px !important;
+        left: -12px;
+        bottom: 170px;
+        position: relative;
+        background-color: rgba(0,0,0,0.71);
+        color: white;
+        padding: 7% !important;
+        div {
+            button {
+                width: 100%;
+                background-color: #EAB82F;
+                display: block;
+                color: black;
+                text-align: center;
+                border-radius: 2px;
+                height: 33px;
+                padding: 0 !important;
+                float: left;
+                margin-right: 7px;
+            }
+        }
+    }
+}
+
+//  organization
+    .p-organizationchart .p-organizationchart-line-top {
+        border-top: 1px solid $pink;
+        border-color: $pink;
+    }
+    .p-organizationchart .p-organizationchart-line-left {
+        border-right: 1px solid $pink;
+        border-color: $pink;
+    }
+
+    .p-organizationchart .p-organizationchart-line-down {
+        background: $pink;
+    }
+
+    .p-person {
+        padding: 0;
+        border: 0 none;
+    }
+
+    .node-header, .node-content {
+        padding: .5em .7rem;
+    }
+
+    .node-header {
+        background-color: $blue;
+        color: #ffffff;
+    }
+
+    .node-content {
+        text-align: center;
+        border: 1px solid $blue;
+    }
+
+    .node-content img {
+        border-radius: 50%;
+    }
+
+    .department-cfo {
+        background-color: $blue;
+        color: #ffffff;
+    }
+
+    .department-coo {
+        background-color: $pink;
+        color: #ffffff;
+    }
+
+    .department-cto {
+        background-color: $pink;
+        color: #ffffff;
+        padding: 10px;
+    }
+
+// accordions
+.accordion-body {
+    color: black;
+}
+.accordion-header {
+    button {
+        color: white;
+    }
+}
+.accordion-button, .accordion {
+    color: white;
+    background: $pink;
+    background: $background-gradient;
+    background: $background-gradient-otherbrowser;
+    code, button{
+        color: black !important;
+    }
+    &:after{
+       filter: invert(1);
+    }
+    &:focus{
+      border-color: transparent !important;
+      box-shadow: none !important;
+    }
+}
+
+// zoomer
+
+@keyframes zoomer {
+    50% {
+        -ms-transform: scale(1.5);
+        /* IE 9 */
+        -webkit-transform: scale(1.5);
+        /* Safari 3-8 */
+        transform: scale(1.5);
+    }
+    100% {
+        -ms-transform: scale(1);
+        /* IE 9 */
+        -webkit-transform: scale(1);
+        /* Safari 3-8 */
+        transform: scale(1);
+    }
+}
+
+// scrollbar
+
+::-webkit-scrollbar {
+    width: 12px;
+    position: absolute;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $pink;
+    height: 80px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $blue;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: lighten($blue, 5%);
+    transition: .5s;
+}
