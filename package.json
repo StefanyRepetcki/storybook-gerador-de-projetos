@@ -1,0 +1,63 @@
+{
+  "name": "storybook-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/components.common.js",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "start": "npm run storybook",
+    "predeploy": "npm run storybook",
+    "deploy": "gh -pages -d storybook ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006 -c config/storybook",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.1.20",
+    "@storybook/addon-essentials": "^6.1.20",
+    "@storybook/addon-links": "^6.1.20",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/vue": "^6.1.20",
+    "@types/jest": "^24.0.19",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/test-utils": "^1.0.3",
+    "css-loader": "^5.0.2",
+    "gh-pages": "^3.1.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^2.0.0",
+    "typescript": "~3.9.3",
+    "vue-cli-plugin-storybook": "~2.0.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "@storybook/addons": "^6.1.20",
+    "@storybook/theming": "^6.1.20",
+    "bootstrap": "^5.0.0-beta2",
+    "bootstrap-icons": "^1.4.0",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.6.5",
+    "element-ui": "^2.13.2",
+    "primeflex": "^2.0.0",
+    "primeicons": "^4.0.0",
+    "primevue": "2.0.8",
+    "v-money": "^0.8.1",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.3",
+    "vue-i18n": "^8.22.4",
+    "vue-property-decorator": "^8.4.2",
+    "vue-zoomer": "^0.3.6",
+    "vue2-perfect-scrollbar": "^1.5.0"
+  }
+}
