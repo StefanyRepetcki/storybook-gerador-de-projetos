@@ -13,6 +13,12 @@ new Vue({
 
 configure(require.context('../../src/components', true, /\.stories\.js$/), module);
 
+function loadStories() {
+	require.keys().forEach(filename => require(filename));
+}
+
+configure(loadStories, module);
+
 export const parameters = {
 	actions: { argTypesRegex: '^on[A-Z].*' },
 	options: { storySort: { order: ['DOCUMENTAÇÃO', 'DESIGN SYSTEM', 'COMPONENTES'], method: 'alphabetical' } }

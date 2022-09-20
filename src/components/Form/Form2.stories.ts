@@ -1,5 +1,5 @@
 export default {
-  title: 'COMPONENTES/Form',
+  title: 'COMPONENTES/Forms',
 };
 
 export const Form2 = () => ({
