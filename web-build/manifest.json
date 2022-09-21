@@ -1,0 +1,8 @@
+{
+  "description": "",
+  "display": "standalone",
+  "lang": "en",
+  "name": "storybook-project",
+  "short_name": "storybook-project",
+  "start_url": "/?utm_source=web_app_manifest"
+}
