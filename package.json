@@ -12,8 +12,7 @@
     "deploy": "gh -pages -d storybook ",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006 -c config/storybook",
-    "build-storybook": "build-storybook -c config/storybook",
-    "build-static-webapp": "npm run build:web"
+    "build-storybook": "build-storybook -c config/storybook"
   },
   "keywords": [],
   "author": "",
