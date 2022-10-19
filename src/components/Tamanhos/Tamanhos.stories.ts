@@ -14,6 +14,7 @@ export const Fontes = () => ({
     <h5>h5. Cabeçalho Design</h5>
     <h6>h6. Cabeçalho Design</h6><br><br>
     <h1>Elementos</h1>
+    <hr>    
     <hr>
     <p>Você pode usar a tag _mark_ para <mark>destacar</mark> textos.</p>
     <p><del>Esta linha de texto deve ser tratada com um texto deletado.</del></p>
